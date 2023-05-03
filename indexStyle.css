@@ -1,0 +1,56 @@
+.nav__a {
+  margin-left: 70px;
+}
+.ba__section {
+  background-image: linear-gradient(#00000033, #00000033),
+    url(imageAssets/ba1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+.ba__section__Presentacion {
+  color: azure;
+  max-width: 40%;
+  height: 60vh;
+  float: right;
+  margin-top: 40vh;
+}
+
+.cardPos {
+  margin: 10px;
+  width: 45vh;
+}
+.cardTag {
+  font-size: 10px;
+  text-align: start;
+  width: fit-content;
+  margin: 0.2vw;
+}
+
+.footer-bg {
+  background-color: rgb(46, 81, 114);
+}
+.footer-li-deco {
+  list-style: none;
+}
+@media screen and (max-width: 800px) {
+  .ba__section__Presentacion {
+    margin-top: 30vh;
+    max-width: 100%;
+  }
+  .honolulu-sec {
+    flex-direction: column;
+  }
+  .honolulu-sec-child {
+    width: 100%;
+  }
+
+  .footer-sec {
+    break-after: right;
+  }
+  .footer-li-deco {
+    list-style: none;
+    width: 30%;
+  }
+}
