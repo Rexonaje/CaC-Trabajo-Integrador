@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CaC-FrontEnd</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../indexStyle.css" />
+
+    <script src="..\bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+   
+    <header>
+      <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+        <a href="#" class="navbar-brand nav__a">
+          <img
+            class="d-inline-block algin-items-center"
+            src="../imageAssets/codoacodo.png"
+            alt="CodoACodo"
+            width="auto"
+            height="60px"
+          />Conf Bs. As.
+        </a>
+
+        <button
+          class="navbar-toggler "
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav nav__a">
+            <li class="navbar-item">
+              <a href="../index.html" class="nav-link">La conferencia</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="nav-link">Los oradores</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="nav-link">El lugar y la fecha</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="nav-link">Convierteté en orador</a>
+            </li>
+            <li class="navbar-item  active">
+              <a href="#" class="nav-link" style="color: green"
+                >Comprar Tickets</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container  ">
+      <div class=" row justify-content-around  flex-column flex-md-row">
+        <div class="card col m-1 card border-primary rounded-0">
+          <div class="card-body">
+           <h3 class="card-title text-center">Estudiante</h3>
+           <p class="card-text text-center">Tiene un descuento</p>
+           <p class="card-tex text-center  fw-bold">%80</p>
+           <p class="card-tex text-center text-secondary">*presentar documentacion </p>
+         </div>
+       </div>
+      
+    
+      <div class="card col m-1 card border-primary rounded-0">
+        <div class="card-body">
+           <h3 class="card-title text-center">Trainee</h3>
+           <p class="card-text text-center">Tiene un descuento</p>
+           <p class="card-text text-center  fw-bold">%50</p>
+           <p class="card-tex text-center text-secondary">*presentar documentacion </p>
+        </div>
+      </div>
+    
+   
+      <div class="card col m-1 card border-warning rounded-0">
+        <div class="card-body">
+          <h3 class="card-title text-center">junior</h3>
+          <p class="card-text text-center">Tiene un descuento</p>
+          <p class="card-text text-center  fw-bold">%15</p>
+          <p class="card-tex text-center text-secondary">*presentar documentacion </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+      <section>
+        <div class="container"> 
+          <p class="m-1 text-center text-secondary" >Venta</p>
+          <p class="m-1 text-center h3 fw-bold">VALOR DEL TICKET $200</p>
+        </div>
+        <div class="container">
+          <form >
+            <div class="input-group">
+               <input id="Nombre" type="text" class="form-control m-1" placeholder="Nombre">
+               <input id="Apellido" type="text" class="form-control m-1" placeholder="Apellido">
+            </div>
+            <div class="input-group">
+              <input id="Correo" type="email" class="form-control m-1" placeholder="correo">
+            </div>
+            <div class="input-group ">
+              <div class=" p-0 col-6">
+                <Label>Cantidad</Label>
+                <input id="Cantidad" type="number" class="form-control " placeholder="Cantidad">
+              </div>
+              <div class="p-0 col-6">
+                 <Label>Categoria</Label>
+                 <select id="Categoria"  class="form-control "> 
+                   <option value="Estudiante">Estudiante</option>
+                   <option value="Trainee">Trainee</option>
+                   <option value="Junior">Junior</option>
+                 </select> 
+              </div>
+              <div class="DisplayResumen"></div>
+             <div class=" container m-3 p-0">
+               <div class="row border text-primary rounded" style="background-color: rgba(135, 206, 250, 0.5);">
+                 <div class="col p-0"><p >Total a pagar:$</p></div>
+                 <div class="col p-0 text-dark "><p id="TotalPagar"></p></div>
+               </div>
+               <div class="container p-0 ">
+                <div class="row p-0 ">
+                    <button  class="btn btn-success col-5 m-2" >borrar</button>
+                    <button id="Resumen"  class="btn btn-success col-5 m-2" >Resumen</button>
+                </div>
+                
+               </div>
+             </div>
+           </div>
+          </form>
+        </div>
+
+        <script src="ticketPage.js"></script>
+      </section>
+   
+    
+    
+    
+    
+      
+    <footer class="footer-bg  ">
+        <div class="container "></div>
+            <ul  class="row m-0 pt-4 pb-2 text-light footer-sec "> 
+              <li class="col-2 footer-li-deco"><a href="#" class="text-decoration-none text-light ">Contáctanos</a> </li>
+              <li class="col-2 footer-li-deco"><a href="#" class="text-decoration-none text-light ">Prensa</a></li>
+              <li class="col-2 footer-li-deco"><a href="#" class="text-decoration-none text-light ">Conferencias</a> </li>
+              <li class="col-2 footer-li-deco"><a href="#" class="text-decoration-none text-light "> Terminos y condiciones</a></li>
+              <li class="col-2 footer-li-deco"><a href="#" class="text-decoration-none text-light "></a> Privacidad</li>
+              <li class="col-2 footer-li-deco"><a href="#" class="text-decoration-none text-light "></a> Estudiantes</li>
+            </ul>
+          </div>
+      </footer>
+    </main>
+  </body>
+</html>
